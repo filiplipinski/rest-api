@@ -1,0 +1,21 @@
+.users {
+  margin: 15px;
+}
+
+.users div {
+  display: flex;
+  margin: 5px;
+}
+
+.users div img {
+  height: 70px;
+  margin-right: 5px;
+}
+
+.users div p {
+  margin-right: 5px
+}
+
+.users div p.id {
+  font-weight: bold;
+}
