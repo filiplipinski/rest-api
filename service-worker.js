@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/zad_euvic/precache-manifest.728b34169151723f1b5e4706bf15b0e1.js"
+  "/zad_euvic/precache-manifest.152dd5ec98976ddb36ac36c3d08b4ae4.js"
 );
 
 workbox.clientsClaim();
