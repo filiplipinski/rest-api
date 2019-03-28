@@ -55,8 +55,11 @@ class App extends Component {
       }));
     }
     else if (method === "PATCH") {
+      let notExisting = true;
+
       const modifiedUsers = this.state.users.map(user => {
         if (user.id === Number(data.id)) {
+          notExisting = false;
           if (data.first_name !== "") user.first_name = data.first_name;
           if (data.last_name !== "") user.last_name = data.last_name;
           if (data.avatar !== "") user.avatar = data.avatar;
@@ -64,10 +67,12 @@ class App extends Component {
         return user
       });
 
-      this.setState({
-        users: modifiedUsers,
-        err: false
-      });
+      if (notExisting) alert("Nie ma użytkownika o takim ID")
+      else
+        this.setState({
+          users: modifiedUsers,
+          err: false
+        });
     }
     else if (method === "DELETE") {
       // console.log(data);      
@@ -85,7 +90,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchData("/api/users?page=2", { method: "GET" });
+    this.fetchData("/api/users?per_page=12", { method: "GET" });
   }
 
   render() {
@@ -93,7 +98,9 @@ class App extends Component {
 
     return (
       <div className="app">
+        <h1>Zarządzanie użytkownikami</h1>
         {/* <button onClick={() => this.fetchData("/api/users?page=2", { method: "GET" })} className="showUsers">Pokaż uzytkowników !</button> */}
+
         <FormAdd fetchData={this.fetchData} />
 
         {err ? <p>Nie udało się wyświetlić użytkowników</p> : <UsersList users={users} fetchData={this.fetchData} firstFetch={firstFetch} />}

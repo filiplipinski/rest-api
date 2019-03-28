@@ -1,39 +1,55 @@
 .users {
-  margin: 15px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .users div {
   display: flex;
-  margin: 5px;
+  margin: 10px 0;
+}
+
+.users h2 {
+  text-transform: uppercase;
+  color: #333;
 }
 
 .users div img {
   height: 70px;
+  width: 70px;
   margin-right: 5px;
+  box-shadow: 0 0 0 1px black;
 }
 
 .users div p {
-  margin-right: 5px
-}
-
-.users div p.id {
+  margin-right: 5px;
+  font-size: 20px;
   font-weight: bold;
 }
 
+.users div p.id {
+  font-weight: 400;
+  margin-right: 15px;
+}
+
 .users p.message {
-  color: red;
+  font-size: 20px;
+  color: #e50914;
 }
 
 .users button.delete {
-  background-color: red;
+  background-color: #e62d36;
   height: 24px;
   width: 24px;
+  line-height: 24px;
   border: 1px solid black;
   border-radius: 50%;
   margin: 23px 15px 0 0;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .users button.delete:hover {
   background-color: darkred;
+  color: #eee;
+  border: 2px solid #eee;
 }

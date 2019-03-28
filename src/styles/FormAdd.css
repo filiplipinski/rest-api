@@ -1,7 +1,60 @@
-input {
+.container input {
   margin-right: 5px;
+  display: block;
+  margin: 5px auto;
+  padding: 10px 0 10px 5px;
+  border: 1px solid #333;
+  font-size: 14px;
 }
 
-.addUser {
-  margin: 15px;
+.container form label {
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  padding: 0 10%;
+}
+
+.container .addUser {
+  margin: 0;
+  flex-basis: 50%;
+  border-right: 2px solid #333;
+}
+
+.container span {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #eee;
+}
+
+.container .updateUser {
+  flex-basis: 50%;
+}
+
+form .btn {
+  background-color: #eee;
+  background-color: #337ab7;
+  border: 1px solid #eee;
+  padding: 10px 20px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  color: #eee;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+form .btn:hover {
+  color: white;
+  background-color: #245782;
+  /* border: 2px solid white; */
 }

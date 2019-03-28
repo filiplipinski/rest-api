@@ -1,1 +1,20 @@
-.app {}
+.app {
+  text-align: center;
+  background-image: url("../img/bgc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.app h1 {
+  text-transform: uppercase;
+  margin: 0;
+  color: #eee;
+  letter-spacing: 2px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 4vh 0;
+  text-shadow: 2px 2px 2px black, 2px 2px 5px darkgrey;
+}
