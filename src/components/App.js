@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import UsersList from "./UsersList";
 import FormAdd from "./FormAdd";
-import FormUpdate from "./FormUpdate";
 import '../styles/App.css';
 import blank_avatar_img from "../img/blank-avatar.jpg";
 
@@ -11,11 +10,13 @@ class App extends Component {
   state = {
     users: [],
     err: false,
+    firstFetch: true,
   };
 
   fetchData = (request, option) => {
     fetch(API + request, option)
       .then(response => {
+        if (response.status === 204) return response.url.match(/\d/g).join("");
         if (response.ok) return response.json();
         throw Error(`Error ${response.status}: connection failed`);
       })
@@ -33,11 +34,12 @@ class App extends Component {
 
   setData = (data, method = "GET") => {
     if (method === "GET") {
-      this.setState(prevState => ({
+      this.setState({
         // users: prevState.users.concat(data.data),
         users: data.data,
-        err: false
-      }));
+        err: false,
+        firstFetch: false
+      });
     }
     else if (method === "POST") {
       if (data.avatar === undefined || data.avatar === "") data.avatar = blank_avatar_img;
@@ -67,6 +69,19 @@ class App extends Component {
         err: false
       });
     }
+    else if (method === "DELETE") {
+      // console.log(data);      
+      let modifiedUsers = [...this.state.users];
+
+      const indexToDelete = modifiedUsers.findIndex(user => user.id === Number(data));
+      //console.log(indexToDelete);
+      modifiedUsers.splice(indexToDelete, 1);
+
+      this.setState(prevState => ({
+        users: modifiedUsers,
+        err: false
+      }));
+    }
   }
 
   componentDidMount() {
@@ -74,15 +89,14 @@ class App extends Component {
   }
 
   render() {
-    const { users, err } = this.state;
+    const { users, err, firstFetch } = this.state;
 
     return (
       <div className="app">
         {/* <button onClick={() => this.fetchData("/api/users?page=2", { method: "GET" })} className="showUsers">Pokaż uzytkowników !</button> */}
         <FormAdd fetchData={this.fetchData} />
-        <FormUpdate />
 
-        {err ? <p>Nie udało się wyświetlić użytkowników</p> : <UsersList users={users} />}
+        {err ? <p>Nie udało się wyświetlić użytkowników</p> : <UsersList users={users} fetchData={this.fetchData} firstFetch={firstFetch} />}
       </div>
     );
   }

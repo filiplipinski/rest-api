@@ -17,11 +17,12 @@ class FormAdd extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
+    const { first_name, last_name, avatar } = this.state;
 
     if (this.state.first_name !== "" && this.state.last_name !== "") {
       const request = {
         method: "POST",
-        body: JSON.stringify(this.state),
+        body: JSON.stringify({ first_name, last_name, avatar }),
         headers: { 'Content-Type': 'application/json' }
       }
       this.props.fetchData("/api/users", request)
@@ -37,7 +38,7 @@ class FormAdd extends Component {
   }
 
   handleUpdate = e => {
-    const { first_name, last_name, id } = this.state;
+    const { id } = this.state;
     e.preventDefault();
 
     if (id !== "") {

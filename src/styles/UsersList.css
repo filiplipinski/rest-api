@@ -19,3 +19,21 @@
 .users div p.id {
   font-weight: bold;
 }
+
+.users p.message {
+  color: red;
+}
+
+.users button.delete {
+  background-color: red;
+  height: 24px;
+  width: 24px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 23px 15px 0 0;
+  cursor: pointer;
+}
+
+.users button.delete:hover {
+  background-color: darkred;
+}
