@@ -8,3 +8,4 @@ Cechy aplikacji:
 * pozwala dodać użytkownika
 * pozwala usunać użytkownika
 * pozwala aktualizować informacje o użytkowniku
+* korzysta z inifniti scroll
