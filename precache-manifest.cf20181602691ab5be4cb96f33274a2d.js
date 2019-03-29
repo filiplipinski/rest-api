@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/zad_euvic/static/js/runtime~main.3a0ed824.js"
   },
   {
-    "revision": "d44e801ccc0eb0c482f9",
-    "url": "/zad_euvic/static/js/main.5289fbc0.chunk.js"
+    "revision": "a6bca14e3a955c5a63e8",
+    "url": "/zad_euvic/static/js/main.600cad7d.chunk.js"
   },
   {
     "revision": "e366a46e79542669edd9",
     "url": "/zad_euvic/static/js/2.02ff6af8.chunk.js"
   },
   {
-    "revision": "d44e801ccc0eb0c482f9",
+    "revision": "a6bca14e3a955c5a63e8",
     "url": "/zad_euvic/static/css/main.cdf8aa14.chunk.css"
   },
   {
-    "revision": "993f3c1b4934e389a29ffb1cf427284e",
+    "revision": "dbbbda484ceb6a7f451613f0cbb8e1a4",
     "url": "/zad_euvic/index.html"
   }
 ];
