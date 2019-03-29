@@ -5,16 +5,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .app h1 {
   text-transform: uppercase;
   margin: 0;
   color: #eee;
+  background-color: rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 50px;
   font-weight: bold;
   padding: 4vh 0;
   text-shadow: 2px 2px 2px black, 2px 2px 5px darkgrey;
+}
+
+footer {
+  width: 100%;
+  background-color: #141414;
+  color: #e5e5e5;
+  letter-spacing: 2px;
+  padding: 5px 0;
+  font-size: 20px;
 }

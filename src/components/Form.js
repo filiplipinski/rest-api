@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "../styles/FormAdd.css"
+import "../styles/Form.css"
 
-class FormAdd extends Component {
+class Form extends Component {
   state = {
     first_name: "",
     last_name: "",
@@ -68,9 +68,9 @@ class FormAdd extends Component {
           <h2>Dodaj użytkownika</h2>
           <form onSubmit={this.handleSubmit}>
             <label htmlFor="first_name">Podaj imię i nazwisko i <span>opcjonalnie</span> adres URL awatara:</label>
+            <br />
             <input onChange={this.handleChange} value={first_name} name="first_name" type="text" placeholder="Imię" />
             <input onChange={this.handleChange} value={last_name} name="last_name" type="text" placeholder="Nazwisko" />
-            {/* <label htmlFor="url">Podaj adres URL do zdjęcia ( OPCJONALNIE )</label> */}
             <input onChange={this.handleChange} value={avatar} name="avatar" id="url" type="url" placeholder="Adres URL (opcjonalnie)" />
             <input type="submit" value="Dodaj Użytkownika" className="btn"></input>
           </form>
@@ -78,9 +78,8 @@ class FormAdd extends Component {
 
         <div className="updateUser">
           <h2>Aktualizuj użytkownika</h2>
-          {/* <p>Podaj ID użytkownika, którego chcesz aktualizować oraz dane które chcesz zamienić</p> */}
           <form onSubmit={this.handleUpdate}>
-            <label htmlFor="id">Podaj ID użytkownika, którego chcesz aktualizować<br /> <span>oraz dane</span> które chcesz zamienić:</label>
+            <label htmlFor="id">Podaj ID użytkownika, którego chcesz aktualizować<br /> <span>oraz dane</span> (w formularzu po lewej) które chcesz zamienić:</label>
             <input onChange={this.handleChange} value={id} name="id" type="number" placeholder="Podaj ID" />
             <input type="submit" value="Aktualizuj użytkownika" className="btn"></input>
           </form>
@@ -90,4 +89,4 @@ class FormAdd extends Component {
   }
 }
 
-export default FormAdd;
+export default Form;
