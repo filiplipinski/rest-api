@@ -1,6 +1,6 @@
 {
-  "homepage": "https://filiplipinski.github.io/zad_euvic/",
-  "name": "zad_euvic",
+  "homepage": "https://filiplipinski.github.io/rest-api/",
+  "name": "rest-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
