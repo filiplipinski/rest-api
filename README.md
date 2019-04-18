@@ -1,4 +1,4 @@
-Prosta aplikacja do zarządzania użytkownikami
+Prosta aplikacja do zarządzania użytkownikami napisana jako zadanie w ciągu 24h
 
 
 
