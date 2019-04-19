@@ -1,4 +1,4 @@
-Prosta aplikacja do zarządzania użytkownikami napisana jako zadanie w ciągu 24h
+Prosta aplikacja napisana w <b>React</b> do zarządzania użytkownikami napisana jako zadanie w ciągu 24h
 
 
 
