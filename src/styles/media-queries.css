@@ -1,3 +1,14 @@
+@media (min-width: 1440px) {
+  .users .user {
+    margin: 30px 0;
+  }
+
+  .users div img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 @media (max-width: 480px) and (orientation: portrait) {
   .container {
     display: block;
