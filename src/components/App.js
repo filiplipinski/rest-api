@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import UsersList from "./UsersList";
 import Form from "./Form";
 import '../styles/App.css';
+import '../styles/media-queries.css';
 import blank_avatar_img from "../img/blank-avatar.jpg";
 
 const API = "https://reqres.in";

@@ -79,7 +79,7 @@ class Form extends Component {
         <div className="updateUser">
           <h2>Aktualizuj użytkownika</h2>
           <form onSubmit={this.handleUpdate}>
-            <label htmlFor="id">Podaj ID użytkownika, którego chcesz aktualizować<br /> <span>oraz dane</span> (w formularzu po lewej) które chcesz zamienić:</label>
+            <label htmlFor="id">Podaj ID użytkownika, którego chcesz aktualizować <span>oraz dane</span> (w formularzu po lewej) które chcesz zamienić:</label>
             <input onChange={this.handleChange} value={id} name="id" type="number" placeholder="Podaj ID" />
             <input type="submit" value="Aktualizuj użytkownika" className="btn"></input>
           </form>

@@ -1,0 +1,22 @@
+@media (max-width: 480px) and (orientation: portrait) {
+  .container {
+    display: block;
+  }
+
+  .container .addUser {
+    border: none;
+  }
+}
+
+@media (max-width: 824px) {
+  .app h1 {
+    font-size: 35px;
+    padding: 2vh 0;
+  }
+}
+
+@media (max-width: 376px) and (orientation: portrait) {
+  .users .user {
+    padding-left: 4%;
+  }
+}
