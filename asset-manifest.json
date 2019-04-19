@@ -1,5 +1,5 @@
 {
-  "main.css": "/rest-api/static/css/main.41e3811f.chunk.css",
+  "main.css": "/rest-api/static/css/main.faae8635.chunk.css",
   "main.js": "/rest-api/static/js/main.e9d8e1d6.chunk.js",
   "main.js.map": "/rest-api/static/js/main.e9d8e1d6.chunk.js.map",
   "runtime~main.js": "/rest-api/static/js/runtime~main.a4d16f59.js",
@@ -7,8 +7,8 @@
   "static/js/2.02ff6af8.chunk.js": "/rest-api/static/js/2.02ff6af8.chunk.js",
   "static/js/2.02ff6af8.chunk.js.map": "/rest-api/static/js/2.02ff6af8.chunk.js.map",
   "index.html": "/rest-api/index.html",
-  "precache-manifest.df4f261898ddb88973aba211f39119b9.js": "/rest-api/precache-manifest.df4f261898ddb88973aba211f39119b9.js",
+  "precache-manifest.9c00af4179670969ab102b5d596872ea.js": "/rest-api/precache-manifest.9c00af4179670969ab102b5d596872ea.js",
   "service-worker.js": "/rest-api/service-worker.js",
-  "static/css/main.41e3811f.chunk.css.map": "/rest-api/static/css/main.41e3811f.chunk.css.map",
+  "static/css/main.faae8635.chunk.css.map": "/rest-api/static/css/main.faae8635.chunk.css.map",
   "static/media/App.css": "/rest-api/static/media/bgc.c0c832a9.jpg"
 }

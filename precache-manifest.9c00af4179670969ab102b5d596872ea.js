@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/rest-api/static/js/runtime~main.a4d16f59.js"
   },
   {
-    "revision": "f6da05430bd1e15aef51",
+    "revision": "c2b70f0c6a8ed598b22c",
     "url": "/rest-api/static/js/main.e9d8e1d6.chunk.js"
   },
   {
@@ -16,11 +16,11 @@ self.__precacheManifest = [
     "url": "/rest-api/static/js/2.02ff6af8.chunk.js"
   },
   {
-    "revision": "f6da05430bd1e15aef51",
-    "url": "/rest-api/static/css/main.41e3811f.chunk.css"
+    "revision": "c2b70f0c6a8ed598b22c",
+    "url": "/rest-api/static/css/main.faae8635.chunk.css"
   },
   {
-    "revision": "e1ef8c986dd1ac75b796cfef24af67e4",
+    "revision": "66a002bfdbf8d312fa387318b260f286",
     "url": "/rest-api/index.html"
   }
 ];
